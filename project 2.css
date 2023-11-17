@@ -1,0 +1,260 @@
+/* CSS Reset  */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* CSS Varibles */
+:root {
+    --bg-color: white;
+    --bor: 2px solid black;
+    --bor-ra: 15px;
+}
+
+/* #navbar */
+#navbar::before {
+    content: "";
+    position: absolute;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+}
+
+#navbar div img {
+    height: 67px;
+    width: 97px;
+}
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar ul li {
+    display: flex;
+    font-size: 1.2rem;
+    font-family: 'Crete Round', serif;
+}
+
+#navbar ul li a {
+    color: white;
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    margin: 7px 1px;
+    padding: 2px 12px;
+}
+
+#navbar ul li a:hover {
+    background-color: var(--bg-color);
+    /* border: var(--bor); */
+    border-radius: var(--bor-ra);
+    color: black;
+}
+
+/* #home CSS   */
+#home {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+    color: white;
+    font-family: 'Acme', sans-serif;
+
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    background: url('img/bg.jpg') no-repeat center center/cover;
+    height: 420px;
+    top: 0px;
+    width: 100%;
+    z-index: -2;
+    /* opacity: 0.94; */
+    display: flex;
+    flex-shrink: 3;
+}
+
+#home input {
+    margin: 10px;
+    padding: 5px 16px;
+    background-color: antiquewhite;
+    border: var(--bor);
+    border-radius: var(--bor-ra);
+    font-family: 'Acme', sans-serif;
+    font-size: 0.93rem;
+    cursor: pointer;
+}
+
+#home input:hover {
+    background-color: gray;
+    color: blue;
+}
+
+#home input:active {
+    background-color: white;
+    color: black;
+}
+/* Services CSS */
+#ourservices{
+    text-shadow: 3px 7px 10px black;
+    font-family: 'Acme', sans-serif;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#services{
+    display: flex;
+}
+#services .box{
+   display: flex;
+   flex-direction: column;
+   height: 230px;
+   border: 2px solid maroon;
+   margin: 5px;
+   padding: 15px;
+   border-radius: var(--bor-ra);
+   box-shadow: 5px 5px 3px black;
+   background-color: antiquewhite;
+}
+#services .box img{
+   height: 99px;
+   width: 127px;
+   display: block;
+   margin: auto;
+   overflow: auto;
+   margin-bottom: 0px;
+}
+
+/* Our clints CSS */
+#clients-section::before{
+    content: "";
+    background: url('img/bg2.jpg') no-repeat center center/cover;
+    position: absolute;
+    z-index: -3;
+    height: 100%;
+    width: 100%;
+    opacity: 0.6;
+}
+#clients-section{
+    height: 290px;
+    position: relative;
+}
+.clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 290px;
+}
+.clients a img{
+    height: 90px;
+    width: 90px;
+    margin: 10px 10px;
+    padding: 10px 10px;
+}
+/* Contact Us  */
+#contact::before{
+    content: "";
+    background: url('img/contact us 2.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -4;
+    opacity: 0.5;
+
+}
+#contact{
+    display: flex;
+    flex-direction: column;
+    /* text-align: center; */
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 400px;
+}
+#contact .contact-section div{
+    height: 28px;
+    width: 335px;
+    margin: 30px 3px;
+    font-size: 1rem;
+    font-family: 'Acme', sans-serif;
+    text-shadow: 3px 7px 5px black;
+
+}
+#contact .contact-section div input{
+    height: 28px;
+    width: 335px;
+    font-size: 1rem;
+    font-family: 'Acme', sans-serif;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 5px 5px 3px black;
+}
+#contact .contact-section #btn2{
+    background-color: antiquewhite;
+    margin: 20px 3px ;
+    cursor: pointer;
+}
+#contact .contact-section #btn2:hover{
+    background-color: gray;
+    color: blue;
+}
+#contact .contact-section #btn2:active{
+    background-color: white;
+}
+#footer{
+    margin: 1px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: burlywood;
+    height: 25px;
+    color: darkblue;
+    font-size: 1rem;
+    font-family: 'Acme', sans-serif;
+}
+
+/* Utility Classes  */
+.h-primary {
+    margin: 13px;
+    padding: 13px;
+    text-shadow: 3px 7px 10px black;
+    font-family: 'Acme', sans-serif;
+    font-size: 1.9rem;
+}
+#background {
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 200px;
+    width: 486px;
+    text-align: center;
+    border-radius: var(--bor-ra);
+    border: var(--bor);
+}
+.h-primarymain{
+    display: flex;
+    justify-content: center;
+    font-family: 'Acme', sans-serif;
+    font-size: 1.9rem;
+    margin: 12px;
+}
+.h-secondarybox{
+    padding-bottom: 18px;
+}
+.center{
+    text-align: center;
+}

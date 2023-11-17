@@ -1,0 +1,68 @@
+/* navbar CSS */
+
+#navbar{
+    flex-direction: column;
+}
+@media (max-width: 525px){
+    #navbar ul li{
+        font-size: 1rem;
+    }
+}
+@media (max-width: 390px) {
+    #navbar ul li{
+        font-size: 0.6rem;
+    }
+}
+
+/* Home CSS */
+@media (max-width: 437px) {
+    #home #background p{
+        font-size: 1rem;
+    }
+    #home #background #btn{
+        margin: 2px;
+        padding: 2px 9px;
+        font-size: 0.80rem;
+    }
+}
+@media (max-width: 437px) {
+    #home #background h1{
+        font-size: 1.5rem;
+        padding: 11px;
+    }
+}
+@media (max-width: 344px) {
+    #home #background h1{
+        font-size: 1rem;
+    }
+}
+@media (max-width: 344px) {
+    #contact .contact-section div input{
+        width: 230px;
+    }
+}
+@media (max-width: 344px) {
+    #contact .contact-section div{
+        width: 230px;
+    }
+}
+
+/* Our Services CSS  */
+#services{
+    flex-wrap: wrap;
+    
+}
+.box{
+    flex-shrink: 5;
+}
+
+/* Clients CSS */
+.clients{
+    flex-wrap: wrap;
+}
+.clients div a img{
+    height: 59px;
+    width: 56px;
+}
+
+
